@@ -1,0 +1,61 @@
+
+body{
+    background-image: url("image/rose-flower.jpg");
+}
+
+.container-fluid {
+    max-width: 400px;
+    margin: 15vh auto 0 auto;
+
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+}
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    background-color: white;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid#999;
+	height:40px;
+}
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+}
+.button {
+    border: 5px solid greenyellow;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: tomato;
+}
+#equal {
+    background-color: yellowgreen;
+    color:white;
+    transition: 0.5s ease-in-out;
+    border: 5px solid greenyellow;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+#equal:hover{
+    background-color: black;
+    color: yellowgreen;
+    transition: 0.5s ease-in-out;
+}
+
+.button:hover {
+    background-color: #242f9b;
+    color: #d4d925;
+    transition: 0.5s ease-in-out;
+}
