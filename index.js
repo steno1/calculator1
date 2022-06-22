@@ -1,15 +1,15 @@
 
 let display=document.getElementById("display");
-let buttons=Array.from(document.getElementsByClassName("button"));
-buttons.map(button=>{
-    button.addEventListener("click",(e)=>{
-        switch(e.target.innerText){
+let buttons=Array.from(document.getElementsByClassName("button")); //Array.from() static method creates a new, shallow-copied Array.
+buttons.map(function(button){
+    button.addEventListener("click",function(exp){
+        switch(exp.target.innerText){
             case "AC": display.innerText="";
             break;
             case "DEL":
-			if(display.innerText){
+		
 			display.innerText=display.innerText.slice(0, -1);
-			}
+			
            break;
 		   case "=":
 		   try{
@@ -20,7 +20,9 @@ buttons.map(button=>{
 		   
 		   break;
             default:
-display.innerText+=e.target.innerText;
+display.innerText+=exp.target.innerText;
         };
     })
 });
+// map() calls a function once for each element in an array
+// The eval() function is used to evaluates the expression.
